@@ -1,0 +1,26 @@
+quarkus:
+  application:
+    name: rate-service
+  http:
+    port: 8080
+  live-reload:
+    password: agreatpassword
+  datasource:
+    #url: jdbc:h2:tcp://localhost/mem:default
+    #driver: org.h2.Driver
+    #username: username-default
+    url: jdbc:mysql://localhost:3306/test
+    driver: com.mysql.cj.jdbc.Driver
+    username: serviceaccount
+    password: somepassword
+    min-size: 3
+    max-size: 13
+  #hibernate-orm.dialect: org.hibernate.dialect.MySQL5Dialect
+  hibernate-orm:
+    dialect: org.hibernate.dialect.MySQL5Dialect
+    database:
+      generation: drop-and-create
+    log:
+      sql: true
+address-validation-api/mp-rest/url: https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates
+address-validation-api/mp-rest/scope: javax.inject.ApplicationScoped

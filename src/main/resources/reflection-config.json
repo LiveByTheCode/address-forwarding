@@ -1,0 +1,11 @@
+[
+  {
+    "name" : "org.locationtech.jts.geom.Point",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allDeclaredFields" : true,
+    "allPublicFields" : true
+  }
+]
